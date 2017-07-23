@@ -1,32 +1,54 @@
 var bio={
     "name":"Gladwin Prince",
     "role":"Front-End Web Developer",
-    "mobile":9876543210,
-    "mail":"mail@GladwinPrince.com",
-    "twitter":"https://twitter.com/GladwinPrince",
-    "github":"https://github.com/GladwinPrince/",
-    "location":"Madurai, Tamil Nadu, India",
+    "contacts":{
+            "mobile":9876543210,
+            "mail":"mail@GladwinPrince.com",
+            "twitter":"https://twitter.com/GladwinPrince",
+            "github":"https://github.com/GladwinPrince/",
+            "location":"Madurai, Tamil Nadu, India"
+    },
     "picture":"images/me.jpg",
     "welcomeMsg":"Hi, I am Gladwin Prince",
     "skills":["Java","Java Servlets","Java Servlet Pages (JSP)","HyperText Markup Language (HTML)","Cascading Stylesheets (CSS)","JavaScript"]
 };
 
 var work={
-    "employer":"Udacity",
-    "title":"Front-End Web Developer",
-    "duration":"3 years",
-    "location":"Madurai, Tamil Nadu, India",
-    "description":"I design Web pages :)"
+    "jobs":[{
+            "employer":"Udacity",
+            "title":"Front-End Web Developer",
+            "dates":"3 years",
+            "location":"Madurai, Tamil Nadu, India",
+            "description":"I design Web pages :)"
+        }]
 };
 
 var education={
-    "name":"Karunya University",
-    "degree":"B.Tech",
-    "duration":"4 years",
-    "location":"Coimbatore, Tamil Nadu, India",
-    "major":"Electronics and Communications"
+    "schools":[{
+            "name":"Karunya University",
+            "degree":"B.Tech",
+            "dates":"4 years",
+            "location":"Coimbatore, Tamil Nadu, India",
+            "major":"Electronics and Communications",
+            "url":"Karunya.edu"
+        }],
+    "onlineCourses":[{
+            "title":"Front-End Web Developer",
+            "school":"Udacity",
+            "dates":"6 Months",
+            "url":"Udacity.com"
+    }]
 };
 
+var projects={
+        "projects":[{
+            "title":"Smart Parking Management System using IoT",
+            "dates":"6 Months",
+            "description":"A IoT based Parking Management system that keeps track of the parking spaces available.",
+            "images":["images/PlaceHolder1.jpg","images/PlaceHolder1.jpg","images/PlaceHolder1.jpg"]
+        }]
+};
+/*
 var bioName=HTMLheaderName.replace("%data%",bio.name);
 var bioRole=HTMLheaderRole.replace("%data%",bio.role);
 var bioMobile=HTMLmobile.replace("%data%",bio.mobile);
@@ -85,3 +107,4 @@ $(".education-entry").append(schoolDegree);
 $(".education-entry").append(schoolDuration);
 $(".education-entry").append(schoolLocation);
 $(".education-entry").append(schoolMajor);
+*/
