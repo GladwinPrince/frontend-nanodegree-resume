@@ -95,7 +95,7 @@ var education={
             "title":"Front-End Web Developer",
             "school":"Udacity",
             "dates":"2013",
-            "url":"https://udacity.com"
+            "url":"https://in.udacity.com/course/front-end-web-developer-nanodegree--nd001/"
     }],
     "display": function(){
         for(var i=0; i<education.schools.length; i++){
