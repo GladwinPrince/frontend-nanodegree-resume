@@ -1,14 +1,14 @@
 var formatData= function(format,data){
     return (format.replace("%data%",data));
-}
+};
 
 var formatURL= function(format,url){
     return (format.replace("#",url));
-}
+};
 
 var internationalizeName= function(name){
     return (name.charAt(0).toUpperCase()+name.slice(1,name.indexOf(" ")).toLowerCase()+name.slice(name.indexOf(" ")).toUpperCase());
-}
+};
 
 var bio={
     "name":"Gladwin Prince",
@@ -109,7 +109,7 @@ var education={
 
         $("#education").append(HTMLonlineClasses);
 
-        for(var i=0; i<education.onlineCourses.length; i++){
+        for(i=0; i<education.onlineCourses.length; i++){
             $("#education").append(HTMLschoolStart);
             $(".education-entry:last").append(formatURL(formatData(HTMLonlineTitle,education.onlineCourses[i].title),education.onlineCourses[i].url));
             $(".education-entry:last").append(formatData(HTMLonlineSchool,education.onlineCourses[i].school));
@@ -152,7 +152,6 @@ work.display();
 education.display();
 projects.display();
 $("#mapDiv").append(googleMap);
-initializeMap();
 /*
 var bioName=HTMLheaderName.replace("%data%",bio.name);
 var bioRole=HTMLheaderRole.replace("%data%",bio.role);
