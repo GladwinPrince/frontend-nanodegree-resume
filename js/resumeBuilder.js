@@ -151,6 +151,8 @@ bio.display();
 work.display();
 education.display();
 projects.display();
+$("#mapDiv").append(googleMap);
+initializeMap();
 /*
 var bioName=HTMLheaderName.replace("%data%",bio.name);
 var bioRole=HTMLheaderRole.replace("%data%",bio.role);
